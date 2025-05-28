@@ -9,9 +9,9 @@
       - Linux
       - shell 
       - ansible
-      concepts:
-        CI: jenkins
-        scripting: shell,ansile, python,terraform
+    concepts:
+      CI: jenkins
+      scripting: shell,ansile, python,terraform
 
   tasks:
     - name: print course information
