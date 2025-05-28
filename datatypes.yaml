@@ -1,6 +1,6 @@
 - name: ansible datatypes
   hosts: local
-  connection: ssh
+  connection: local
   vars:
     Duration: 120
     course: "DevSecOps with AWS"
