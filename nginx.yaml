@@ -1,5 +1,5 @@
 - name: Install nginx
-  hosts: backend
+  hosts: frontend
   become: yes
   tasks:
     - name: Installing nginx
@@ -11,4 +11,4 @@
       ansible.builtin.service
       name: nginx
       state: started
-        
+      enabled: yes
