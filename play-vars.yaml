@@ -14,3 +14,7 @@
       # Vars reference should be surrounded by ""
         msg: "Hello ansible {{ course }} duration: {{ duration }}, Traine is {{ Trainer }}"
         
+    - name: Print course information
+      ansible.builtin.debug:
+      # Vars reference should be surrounded by ""
+        msg: "Hello ansible {{ course }} duration: {{ duration }}, Traine is {{ Trainer }}"    
