@@ -10,7 +10,7 @@
 
   tasks:
     - name: Print course information
-      Vars:
+      vars:
         course: ansible
       ansible.builtin.debug:
       # Vars reference should be surrounded by ""
