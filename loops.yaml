@@ -1,0 +1,13 @@
+- name: loops
+  hosts: frontend 
+  connections: ssh
+  tasks:
+   -name: Print names
+    ansible.builtin.debug:
+      msg: "Hello {{ item }}"
+      loop:
+        - Gautam
+        - PawanKalyan
+        - ChandraBabuNaidu
+        - Lokesh
+        - RRR
