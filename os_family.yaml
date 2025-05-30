@@ -1,7 +1,6 @@
 - name: Playbook for os family
   hosts: frontend
   become: yes
-  connection: ssh
   tasks:
   - name: Install nginx in redhat
     ansible.builtin.dnf:
