@@ -1,5 +1,5 @@
 - name: Playbook for os family
-  hosts: helloworld
+  hosts: frontend
   become: yes
   tasks:
   - name: Install nginx in redhat
