@@ -8,7 +8,7 @@
       state: present
     when: ansible_os_family == "RedHat"
 
- - name: Install nginx in redhat
+  - name: Install nginx in redhat
     ansible.builtin.apt:
       name: nginx
       state: present
