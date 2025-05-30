@@ -1,0 +1,9 @@
+- name: Playbook for os family
+  hosts: frontned
+  become: yes
+  tasks:
+  - name: Install nginx in redhat
+    ansible.builtin.dnf:
+      name: nginx
+      state: present
+      
