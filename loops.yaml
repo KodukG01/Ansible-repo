@@ -2,7 +2,7 @@
   hosts: frontend 
   connections: ssh
   tasks:
-   -name: Print names
+   - name: Print names
     ansible.builtin.debug:
       msg: "Hello {{ item }}"
       loop:
