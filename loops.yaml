@@ -1,13 +1,13 @@
 - name: loops
-  hosts: frontend 
-  connections: ssh
+  hosts: local
+  connection: local
   tasks:
-   - name: Print names
-    ansible.builtin.debug:
-      msg: "Hello {{ item }}"
-      loop:
+    - name: print names
+      ansible.builtin.debug:
+        msg: "Hi, {{ item }}"
+        loop:
         - Gautam
-        - PawanKalyan
-        - ChandraBabuNaidu
-        - Lokesh
-        - RRR
+        - Naruto
+        - Onepiece
+        - DBZ
+        
