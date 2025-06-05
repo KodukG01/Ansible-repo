@@ -6,7 +6,8 @@
       ansible.builtin.command: id roboshop
       ignore_errors: true
 
-    - name: Proceed user
+    - name: create user
+      become: yes
       ansible.builtin.command: useradd roboshop
       when: output.rc != 0
 
