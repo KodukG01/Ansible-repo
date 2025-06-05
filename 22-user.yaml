@@ -4,4 +4,14 @@
   tasks:
     - name: check roboshop exist or not
       ansible.builtin.command: id roboshop
+      ignore_errors: true
+
+    - name: Proceed user
+      ansible.builtin.command: useradd roboshop
+      when: output.rc != 0
+
+    - name: user already exist
+      ansible.builtin.command: useradd roboshop
+        msg: "user already exist"
+      when: output.rc == 0
       
